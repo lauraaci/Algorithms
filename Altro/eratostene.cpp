@@ -14,11 +14,13 @@ void primes()
             pr.push_back(i);
             fp[i]=i;
         }
-        for (int j=0; j<pr.size() && pr[j]<=fp[i] && i*pr[j]<N; j++) fp[i*pr[j]]=pr[j];
+        for (int j=0; j<pr.size() && pr[j]<=fp[i] && i*pr[j]<N; j++) 
+        fp[i*pr[j]]=pr[j];
     }
 }
 
 int main()
 {
     primes();
+    cout << pr.size();
 }

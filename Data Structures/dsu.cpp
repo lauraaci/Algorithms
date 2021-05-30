@@ -2,7 +2,6 @@
 using namespace std;
 vector<int> p;
 vector<int> r;
-
 void makeset(int x)
 {
    p[x]=x; 
@@ -15,7 +14,7 @@ int find(int x)
     else return p[x]=find(p[x]);
 }
 
-void uni(int x, int y)
+void unisci(int x, int y)
 {
     int a=find(x);
     int b=find(y);

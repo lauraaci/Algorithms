@@ -42,7 +42,7 @@ vector<pt> convexhull(vector<pt>& v)
 
 int32_t main()
 {
-  //  ifstream cin ("input.txt");
+  ifstream cin ("input.txt");
     
     while(1)
     {
