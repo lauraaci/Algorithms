@@ -10,7 +10,7 @@ struct MinQueue
 
     void push(int x)
     {
-        while(!q.empty() && q.back().first > x ) q.pop_back(); // se l'elemento in fondo è maggiore di x lo scarto perchè ne ho trovato uno successivo minore
+        while(!q.empty() && q.back().first >= x ) q.pop_back(); // se l'elemento in fondo è maggiore di/minore x lo scarto perchè ne ho trovato uno successivo minore
         q.push_back({x, t});
         t++;
         while(q.front().second < t-s) q.pop_front();

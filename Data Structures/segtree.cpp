@@ -25,8 +25,6 @@ struct segm
     void inittree(ll n)
     {
         size=1;
-        //while(size<n) size*=2;
-       // size=size*2+1;
         values.resize(4*n, {INF, 0});
         operation.resize(4*n, {0, INF});
     }
@@ -149,6 +147,17 @@ struct segm
         if(res==-1) res=lower(2*v+1, m+1, r, i, j,  val);
         return res;
  
+    }
+
+    void stampa()
+    {
+       cout <<endl<<"CARICA"<<endl;
+        for (int i=0; i<size; i++) cout << "v: "<<i<<" "<<carica[i]<<" ";
+        cout << endl;
+        cout <<endl<<"SVUOTA"<<endl;
+        for (int i=0; i<size; i++) cout << "v: "<<i<<" "<<svuota[i]<<" ";
+        cout << endl;
+
     }
 
 
